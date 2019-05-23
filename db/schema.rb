@@ -24,10 +24,10 @@ ActiveRecord::Schema.define(version: 2019_05_23_103609) do
   create_table "doses", force: :cascade do |t|
     t.string "description"
     t.bigint "ingredient_id"
-    t.bigint "coctail_id"
+    t.bigint "cocktail_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["coctail_id"], name: "index_doses_on_coctail_id"
+    t.index ["cocktail_id"], name: "index_doses_on_cocktail_id"
     t.index ["ingredient_id"], name: "index_doses_on_ingredient_id"
   end
 
